@@ -32,7 +32,7 @@ This will be an eCommerse Rest API using Nodejs and Mongo DB. I'll code NodeJS C
 To provide security, I will implement JSON Webtoken (JWT) by user and admin requests. For payments I will implement Stripe payment methods.
 
 
-### `Add Additional Functionality`
+### `Additional Functionality`
 
 Technologies
 - React Router
