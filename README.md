@@ -1,33 +1,49 @@
-# Getting Started with Create React App
+# eCommerce App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Development Phases
 
-In the project directory, you can run:
+This project is being developed in several phases:
 
-### `npm start`
+### `API Front End`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Initial phase where the UI/UX is developed
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technologies
+- Styled Components
+- React/JSX
 
-### `npm test`
+Components
+- Navbar
+- Hero Slider
+- Product List UI
+- Shopping Categories
+- Login & Register Page
+- Single Product Page
+- Shopping Cart Page
+- Footer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `eCommerce Backend`
 
-### `npm run build`
+During this phase of the project, I will build out the backend scaffolding.\
+This will be an eCommerse Rest API using Nodejs and Mongo DB. I'll code NodeJS CRUD operations, fetch data with queries, and use advanced MongoDB methods.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To provide security, I will implement JSON Webtoken (JWT) by user and admin requests. For payments I will implement Stripe payment methods.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Add Additional Functionality`
+
+Technologies
+- React Router
+- Fetch and Filter Products
+- Redux Shopping Cart
+- Stripe Payments
+- Firebase Images
+
+Components
+- Admin Dashboard
+
 
 ### `npm run eject`
 
@@ -45,14 +61,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
 ### Making a Progressive Web App
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
@@ -64,7 +72,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
