@@ -1,5 +1,5 @@
 import './App.css'
-import Product from "./pages/Product";
+import SingleProduct from "./pages/SingleProduct";
 import Home from "./pages/Home";
 import ProductsPage from "./pages/ProductsPage";
 import Register from "./pages/Register";
@@ -19,7 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ProductsPage />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/product" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
