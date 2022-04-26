@@ -7,7 +7,7 @@ import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Container = styled.div`
-  height: 60px;
+  /* height: 60px; */
 `
 const Wrapper = styled.div`
   padding: 10px 20px;
