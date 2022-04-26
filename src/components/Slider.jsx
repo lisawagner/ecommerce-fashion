@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 import { sliderItems } from "../data";
@@ -99,7 +100,9 @@ const Slider = () => {
                         <InfoContainer>
                             <Title>{item.title}</Title>
                             <Desc>{item.desc}</Desc>
-                            <Button>{item.btn}</Button>
+                            <Link to="products">
+                                <Button>{item.btn}</Button>
+                            </Link>
                         </InfoContainer>
                     </Slide>                
                 ) )}

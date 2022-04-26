@@ -20,14 +20,15 @@ const Left = styled.div`
   flex-direction: column;
   padding: 20px;
 `;
-
-const Logo = styled.h1``;
-
-const Desc = styled.p`
-  margin: 20px 0px;
+const Logo = styled.h1`
+  margin-top: 3rem;
+`;
+const Desc = styled.div`
+  margin-bottom: 1rem;
 `;
 const SocialContainer = styled.div`
   display: flex;
+  margin-bottom: 1rem;
 `;
 const SocialIcon = styled.div`
   width: 40px;
@@ -43,15 +44,12 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 2;
     display: flex;
-    /* margin: auto 2rem; */
-
 `
 const Col = styled.div`
     flex: 1;
     padding: 20px;
     margin: auto 1rem;
 `
-
 const Title = styled.h3`
   margin-bottom: 1.5rem;
 `;
@@ -79,7 +77,9 @@ const Footer = () => {
     <Left>
       <Logo>PHENOMINA.</Logo>
       <Desc>
-        Embrace the power of serendipity. Wear exactly what you want. As long as you are true to yourself, you will look wonderful. The real joy in fashion comes from wearing exactly what you want so that, when you look in the mirror, you see you, not someone else. Be your favourite version of yourself.
+        <p>Embrace the power of serendipity. Wear exactly what you want. As long as you are true to yourself, you will look wonderful. </p>
+        <p>The real joy in fashion comes from wearing exactly what you want so that, when you look in the mirror, you see you, not someone else.</p>
+        <p>Be your favourite version of yourself.</p>    
       </Desc>
       <SocialContainer>
         <SocialIcon color="#ff7f50">
@@ -100,12 +100,12 @@ const Footer = () => {
     <Col>
         <Title>Shop</Title>
         <List>
+          <ListItem>Essentials</ListItem>
             <ListItem>Day Styles</ListItem>
-            <ListItem>Active Wear</ListItem>
-            <ListItem>Essentials</ListItem>
             <ListItem>Party Time</ListItem>
-            <ListItem>Lounge Wear</ListItem>
+            <ListItem>Active Wear</ListItem>        
             <ListItem>Accessories</ListItem>
+            <ListItem>Favourites</ListItem>       
         </List>
     </Col>
     <Col>
@@ -113,8 +113,8 @@ const Footer = () => {
         <List>
             <ListItem>My Account</ListItem>
             <ListItem>Customer Service</ListItem>
-            <ListItem>Store Locator</ListItem>
             <ListItem>Order Tracking</ListItem>
+            <ListItem>Store Locator</ListItem>           
             <ListItem>Gift Cards</ListItem>
             <ListItem>Terms</ListItem>
         </List>

@@ -4,6 +4,7 @@ import {
     ShoppingCartOutlined,
   } from "@mui/icons-material";
   import styled from "styled-components";
+  import { Link } from "react-router-dom";
   
   const Info = styled.div`
     opacity: 0;
@@ -68,12 +69,18 @@ import {
         {/* <Circle /> */}
         <Image src={item.img} />
         <Info >
-          <Icon>
-            <ShoppingCartOutlined />
-          </Icon>
-          <Icon>
-            <SearchOutlined />
-          </Icon>
+          <Link to="cart">
+            <Icon>
+              <ShoppingCartOutlined />
+            </Icon>
+          </Link>
+
+          <Link to="product">
+            <Icon>
+              <SearchOutlined />
+            </Icon>
+          </Link>
+{/* TODO: favourites list page */}
           <Icon>
             <FavoriteBorderOutlined />
           </Icon>
