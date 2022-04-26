@@ -12,8 +12,8 @@ import {
 
 const Container = styled.div`
   display: flex;
+  margin: auto 2rem;
 `;
-
 const Left = styled.div`
   flex: 1;
   display: flex;
@@ -26,11 +26,9 @@ const Logo = styled.h1``;
 const Desc = styled.p`
   margin: 20px 0px;
 `;
-
 const SocialContainer = styled.div`
   display: flex;
 `;
-
 const SocialIcon = styled.div`
   width: 40px;
   height: 40px;
@@ -42,40 +40,35 @@ const SocialIcon = styled.div`
   justify-content: center;
   margin-right: 20px;
 `;
-
 const Center = styled.div`
-  flex: 1;
-  padding: 20px;
-`;
+    flex: 2;
+    display: flex;
+    /* margin: auto 2rem; */
+
+`
+const Col = styled.div`
+    flex: 1;
+    padding: 20px;
+    margin: auto 1rem;
+`
 
 const Title = styled.h3`
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 `;
-
 const List = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
   flex-wrap: wrap;
 `;
-
 const ListItem = styled.li`
-  width: 50%;
   margin-bottom: 10px;
 `;
-
-const Right = styled.div`
-  flex: 1;
-  padding: 20px;
-`;
-
 const ContactItem = styled.div`
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 `;
-
 const Payment = styled.img`
     width: 50%;
 `;
@@ -104,26 +97,30 @@ const Footer = () => {
       </SocialContainer>
     </Left>
     <Center>
-      <Title>Shop</Title>
-      <List>
-        <ListItem>Day Styles</ListItem>
-        <ListItem>Active Wear</ListItem>
-        <ListItem>Essentials</ListItem>
-        <ListItem>Party Time</ListItem>
-        <ListItem>Lounge Wear</ListItem>
-        <ListItem>Accessories</ListItem>
-      </List>
-      <Title>Info</Title>
-      <List>
-        <ListItem>My Account</ListItem>
-        <ListItem>Customer Service</ListItem>
-        <ListItem>Store Locator</ListItem>
-        <ListItem>Order Tracking</ListItem>
-        <ListItem>Gift Cards</ListItem>
-        <ListItem>Terms</ListItem>
-      </List>
+    <Col>
+        <Title>Shop</Title>
+        <List>
+            <ListItem>Day Styles</ListItem>
+            <ListItem>Active Wear</ListItem>
+            <ListItem>Essentials</ListItem>
+            <ListItem>Party Time</ListItem>
+            <ListItem>Lounge Wear</ListItem>
+            <ListItem>Accessories</ListItem>
+        </List>
+    </Col>
+    <Col>
+        <Title>Info</Title>
+        <List>
+            <ListItem>My Account</ListItem>
+            <ListItem>Customer Service</ListItem>
+            <ListItem>Store Locator</ListItem>
+            <ListItem>Order Tracking</ListItem>
+            <ListItem>Gift Cards</ListItem>
+            <ListItem>Terms</ListItem>
+        </List>
+    </Col>
     </Center>
-    <Right>
+    <Col>
       <Title>Contact</Title>
       <ContactItem>
         <Room style={{marginRight:"10px"}}/> 1980 Vulcan Path, Southern Alberta 98336
@@ -135,7 +132,7 @@ const Footer = () => {
         <MailOutline style={{marginRight:"10px"}} /> support@yesyes.com
       </ContactItem>
       <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
-    </Right>
+    </Col>
   </Container>
   )
 }
