@@ -20,7 +20,6 @@ import {
     transition: all 0.5s ease;
     cursor: pointer;
   `;
-  
   const Container = styled.div`
     flex: 1;
     margin: 5px;
@@ -36,7 +35,6 @@ import {
       opacity: 1;
     }
   `;
-  
   const Circle = styled.div`
     width: 200px;
     height: 200px;
@@ -44,12 +42,10 @@ import {
     background-color: white;
     position: absolute;
   `;
-  
   const Image = styled.img`
     height: 75%;
     z-index: 2;
   `;
-  
   const Icon = styled.div`
     width: 40px;
     height: 40px;
@@ -71,7 +67,7 @@ import {
       <Container>
         {/* <Circle /> */}
         <Image src={item.img} />
-        <Info>
+        <Info >
           <Icon>
             <ShoppingCartOutlined />
           </Icon>

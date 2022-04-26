@@ -1,3 +1,4 @@
+// import { Link } from 'react-router-dom'
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -5,7 +6,7 @@ const Container = styled.div`
   margin: 3px;
   height: 70vh;
   position: relative;
-`;
+`
 const Image = styled.img`
   width: 100%;
   height: 100%;
@@ -19,22 +20,12 @@ const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* top: 0;
-  left: 0; */
-  /* width: 100%;
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background: rgba(0,0,0,0.6); */
   background-color: ${ props => props.bg };
-`;
+`
 const Title = styled.h1`
     color: white;
     margin-bottom: 20px;
-`;
+`
 const Button = styled.button`
     border:none;
     padding: 10px;
@@ -42,16 +33,19 @@ const Button = styled.button`
     color:black;
     cursor: pointer;
     font-weight: 600;
-`;
+`
 
 const DeptItem = ( {item} ) => {
   return (
     <Container>
+      {/* <Link to={`/products/${item.cat}`}> */}
+      {/* <Link to={`/products`}> */}
         <Image src={item.img} />
         <Info bg={item.bg}>
             <Title>{item.title}</Title>
             <Button>discover</Button>
         </Info>
+      {/* </Link> */}
     </Container>
   )
 }
