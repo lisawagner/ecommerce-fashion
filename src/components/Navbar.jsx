@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 
 import { Search } from '@mui/icons-material';
 import Badge from '@mui/material/Badge';
@@ -51,6 +52,7 @@ const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
+  text-align: none;
 `
 
 const Navbar = () => {
@@ -66,13 +68,19 @@ const Navbar = () => {
             </Left>
             <Centre><Logo>PHENOMINA.</Logo></Centre>
             <Right>
-              <MenuItem>REGISTER</MenuItem>
-              <MenuItem>LOGIN</MenuItem>
-              <MenuItem>
-                <Badge badgeContent={4} color="primary">
-                  <ShoppingCartOutlinedIcon color="action" />
-                </Badge>
-              </MenuItem>   
+              <Link to="register">
+                <MenuItem>REGISTER</MenuItem>
+              </Link>
+              <Link to="login">
+                <MenuItem>LOGIN</MenuItem>
+              </Link>
+              <Link to="cart">
+                <MenuItem>
+                  <Badge badgeContent={4} color="primary">
+                    <ShoppingCartOutlinedIcon color="action" />
+                  </Badge>
+                </MenuItem>
+              </Link>  
             </Right>
         </Wrapper>
     </Container>
