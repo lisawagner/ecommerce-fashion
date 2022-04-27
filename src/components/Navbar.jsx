@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 
+// responsive queries not working with this version of react, maybe dated
+import { mobile } from '../responsive'
+
 import { Search } from '@mui/icons-material';
 import Badge from '@mui/material/Badge';
 // import MailIcon from '@mui/icons-material/Mail';
@@ -9,12 +12,14 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Container = styled.div`
   /* height: 60px; */
+  
 `
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({background: "red" })}
 `
 const Left = styled.div`
   flex: 1;
@@ -66,7 +71,11 @@ const Navbar = () => {
                 <Search style={{color: 'grey', fontSize: 16 }} />
               </SearchContainer>
             </Left>
-            <Centre><Logo>PHENOMINA.</Logo></Centre>
+            <Centre>
+            <Link to="/">
+              <Logo>PHENOMINA.</Logo>
+              </Link>
+            </Centre>
             <Right>
               <Link to="register">
                 <MenuItem>REGISTER</MenuItem>
