@@ -1,22 +1,124 @@
 
 :root {
-    --main-container: 1320px;
-    --container-gutters: 1.5rem;
+    /* --main-container: 1320px;
+    --container-gutters: 1.5rem; */
 }
 
-#showme {
+#slidenav {
     position: fixed;
     top: 0;
     left: -110%;
-    width: 50%;
+    width: 70%;
+    background: white;
 }
 
-#showme.active {
+#slidenav.active {
     font-size: 2rem;
-    font-weight: bold;
+    z-index: 999;
     left: 0%;
 }
 
+.menu-toggle {
+    border: none;
+    background: transparent;
+    color: teal;
+}
+
+.menu-toggle:hover {
+    color: coral;
+}
+
+.mobile-toggle {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.mobile-brand {
+    padding-bottom: 30px;
+    padding-top: 40px;
+    display: block;
+    text-align: center;
+}
+
+.slidenav-inner__wrapper{
+    /* overflow-y: scroll; */
+    /* max-height: calc(100vh - 100px); */
+    height: 100vh;
+    padding: 40px 30px;
+}
+
+.slidenav-inner__menu {
+    padding-bottom: 20px;
+    text-align: left;
+    /* border-bottom: 1px solid coral; */
+}
+
+.slidenav-inner__menu ul {
+    margin: 0;
+    padding: 0 0;
+}
+
+.slidenav-inner__menu ul li {
+    /* border-bottom: 1px solid coral; */
+    list-style-type: none;
+}
+
+.slidenav-inner__menu ul li li:first-child {
+    border-top: 1px solid coral;
+}
+
+.slidenav-inner__menu ul li a {
+    display: block;
+    position: relative;
+    padding: 12px 0;
+    line-height: 1;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: teal;
+}
+
+.slidenav-inner__commerce {
+    padding: 30px 0;
+    text-align: left;
+    border-bottom: 1px solid coral;
+}
+
+.commerce-row {
+    /* width: 100%;
+    display: flex; */
+  
+}
+
+.commerce-menu__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.commerce-menu__item h6 {
+    margin: 0 1rem;
+}
+
+.commerce-row a {
+
+    display: block;
+    margin-bottom: 16px;
+    /* position: relative; */
+    font-size: 1rem;
+    /* margin-right: 4px; */
+    /* width: 20px; */
+}
+
+.commerce-row a:last-child {
+    /* margin-bottom: 0; */
+}
+
+.slidenav-inner__commerce a:hover {
+    color: coral;
+}
+
+/* Large Screen Menu */
 .menu-top {
     /* max-width: 1400px; */
     margin:  auto;
@@ -25,19 +127,12 @@
 }
 
 .container {
-    width: 100%;
-    /* margin: auto; */
-
-    padding: 0 0.75rem;
 
 }
 
 .menu-top__row {
     display: flex;
-    /* gap: 1.5rem; */
-    margin-right: 2rem;
-    margin-left: 1rem;
-
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
