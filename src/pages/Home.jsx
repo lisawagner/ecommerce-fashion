@@ -8,7 +8,7 @@ import Layout from '../components/Layout'
 const Home = () => {
   return (
     <Layout>
-      <Slider />
+      {/* <Slider /> */}
       <FeaturedDepts />
       <Products />
       <Magazine />
