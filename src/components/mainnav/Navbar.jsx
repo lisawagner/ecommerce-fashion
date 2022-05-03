@@ -13,6 +13,7 @@ const Navbar = () => {
 
   return (
     <>
+    <div className="container">
         {/* slide-in nav */}
         <div id="slidenav" className={toggle ? "active" : ""}>
             <button type="button" className='menu-toggle mobile-toggle' onClick={handleToggle}>
@@ -79,9 +80,7 @@ const Navbar = () => {
                             <button type="button" className="searchBoxToggler"><Search /></button>
                             <a href="index.html"><ShoppingCartOutlined /></a>
                             <a href="index.html"><FavoriteBorder /></a>
-                            <a href="index.html"><PersonOutline /></a>
-                            
-                            
+                            <a href="index.html"><PersonOutline /></a>   
                         </div>
                     </div>
 
@@ -94,6 +93,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
+    </div>
     </>
   )
 }

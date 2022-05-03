@@ -2,13 +2,21 @@
 
 @import-normalize;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+  /* margin: 0; */
   font-family: 'Urbanist', sans-serif, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
 
 code {
