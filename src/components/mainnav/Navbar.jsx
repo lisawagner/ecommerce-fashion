@@ -20,29 +20,29 @@ const Navbar = () => {
                 <Close />
             </button>
             <div className="mobile-brand">
-                <a href="index.html">PHENOMINA.</a>
+                <a href="/">PHENOMINA.</a>
             </div>
             <div className="slidenav-inner__wrapper">
                 <div className="slidenav-inner__menu">
                     <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="index.html">essentials</a></li>
-                        <li><a href="index.html">designer</a></li>
-                        <li><a href="index.html">flair</a></li>
-                        <li><a href="index.html">activewear</a></li>
-                        <li><a href="index.html">accessories</a></li>
-                        <li><a href="index.html">contact</a></li>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/">essentials</a></li>
+                        <li><a href="/">designer</a></li>
+                        <li><a href="/">flair</a></li>
+                        <li><a href="/">activewear</a></li>
+                        <li><a href="/">accessories</a></li>
+                        <li><a href="/">contact</a></li>
                     </ul>            
                 </div>
                 <div className="slidenav-inner__commerce">
        
-                    <Link className="commerce-menu__item" to="index.html"><PersonOutline />
+                    <Link className="commerce-menu__item" to="/login"><PersonOutline />
                         <h6>Login / Register</h6>
                     </Link>
-                    <Link className="commerce-menu__item" to="index.html"><FavoriteBorder />
+                    <Link className="commerce-menu__item" to="/"><FavoriteBorder />
                         <h6>Favourites</h6>
                     </Link>
-                    <Link className="commerce-menu__item" to="index.html"><ShoppingCartOutlined />
+                    <Link className="commerce-menu__item" to="/cart"><ShoppingCartOutlined />
                         <h6>Cart: $328.00</h6>
                     </Link>
                     {/* <a href="index.html"><PersonOutline />Login / Register</a>
@@ -78,9 +78,9 @@ const Navbar = () => {
                     <div className="menu-top__col display">
                         <div className="menu-buttons">
                             <button type="button" className="searchBoxToggler"><Search /></button>
-                            <a href="index.html"><ShoppingCartOutlined /></a>
-                            <a href="index.html"><FavoriteBorder /></a>
-                            <a href="index.html"><PersonOutline /></a>   
+                            <a href="/cart"><ShoppingCartOutlined /></a>
+                            <a href="/"><FavoriteBorder /></a>
+                            <a href="/login"><PersonOutline /></a>   
                         </div>
                     </div>
 
