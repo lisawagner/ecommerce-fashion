@@ -1,6 +1,6 @@
 # eCommerce App
 
-Currently working on the navigation
+Currently working on the site navigation.
 
 ## Development Phases
 

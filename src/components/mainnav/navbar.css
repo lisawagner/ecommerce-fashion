@@ -123,7 +123,7 @@
     /* max-width: 1400px; */
     margin:  auto;
     padding: 1rem 2rem;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
 }
 
 .container {
@@ -160,7 +160,6 @@
 .d-lg-none {
     display: none;
 }
-
 
 .menu-buttons > a,
 .menu-buttons > button {
