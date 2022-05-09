@@ -28,8 +28,10 @@ const GlobalStyles = createGlobalStyle`
     /* #FFFA69 */
     --blue-violet: hsl(264, 100%, 63%);
     /* #8F42FF */
-    --powder-blue: hsl(197, 100%, 39%);
+    /* --powder-blue: hsl(197, 100%, 39%); */
     /* #008fc7 */
+    --powder-blue: hsl(210, 79%, 46%);
+    /* #1976d2 */
 
 
     /* old colors */
