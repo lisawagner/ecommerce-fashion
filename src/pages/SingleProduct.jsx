@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/Layout'
 
 import { Add, Remove } from "@mui/icons-material";
 import styled from "styled-components";
@@ -111,7 +110,6 @@ const Button = styled.button`
 
 const SingleProduct = () => {
   return (
-    <Layout>
       <Wrapper>
         <ImgContainer>
           <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
@@ -154,7 +152,6 @@ const SingleProduct = () => {
           </AddContainer>
         </InfoContainer>
       </Wrapper>
-    </Layout>
   )
 }
 

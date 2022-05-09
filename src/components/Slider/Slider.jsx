@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
-import { sliderItems } from "../data";
+import { sliderItems } from "../../constants/data";
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined'
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined'
 

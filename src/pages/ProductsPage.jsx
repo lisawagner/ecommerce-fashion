@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "react-router";
 
-import Layout from '../components/Layout'
 import Products from '../components/Products'
 import styled from "styled-components";
 
@@ -46,7 +45,7 @@ const ProductsPage = () => {
   };
 
   return (
-    <Layout>
+    <>
       <Title>Product: {cat}</Title>
       <FilterContainer>
         <Filter>
@@ -79,7 +78,7 @@ const ProductsPage = () => {
         </Filter>
       </FilterContainer>
       <Products cat={cat} filters={filters} sort={sort} />
-    </Layout>
+    </>
   )
 }
 

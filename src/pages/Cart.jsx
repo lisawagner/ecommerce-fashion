@@ -1,7 +1,5 @@
 // import { useSelector } from "react-redux";
 
-
-import Layout from '../components/Layout'
 import styled from "styled-components";
 import { Add, Remove } from "@mui/icons-material";
 
@@ -131,7 +129,6 @@ const Button = styled.button`
 const Cart = () => {
 
   return (
-    <Layout>
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
@@ -226,7 +223,6 @@ const Cart = () => {
         </Bottom>
       </Wrapper>
 
-    </Layout>
   )
 }
 

@@ -60,7 +60,7 @@ const MenuItem = styled.div`
   text-align: none;
 `
 
-const Navbar = () => {
+const NavbarOld = () => {
   return (
     <Container>
         <Wrapper>
@@ -96,4 +96,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarOld
