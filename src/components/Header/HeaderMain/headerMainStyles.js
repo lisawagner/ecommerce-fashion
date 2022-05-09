@@ -34,6 +34,10 @@ export const MainContainer = styled.div`
     margin-left: 2rem;
     gap: 80px;
   }
+
+  @media ${DEVICE.laptop} {
+    margin: auto 2rem;
+  }
 `
 
 // header-logo
