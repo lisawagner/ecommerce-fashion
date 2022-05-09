@@ -15,17 +15,23 @@ export const HeaderMainWrapper = styled.div`
 
 // container for branding and searchbar
 export const MainContainer = styled.div`
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   padding: 20px 15px;
   /* border-bottom: 1px solid var(--smokey-haze); */
+
+  @media ${DEVICE.mobileL} {
+    margin-top: 3rem;
+  }
 
   @media ${DEVICE.tablet} {
     /* background: green; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90%;
-    margin: auto;
+    /* max-width: 90%; */
+    /* margin: auto; */
+    margin-right: 2rem;
+    margin-left: 2rem;
     gap: 80px;
   }
 `
@@ -38,7 +44,7 @@ export const BrandLink = styled(Link)`
   /* margin-bottom: 20px; */
   /* color: var(--teal); */
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   /* font-size: 1rem; */
   /* letter-spacing: 2px; */
 

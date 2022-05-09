@@ -54,4 +54,23 @@ export const MenuCategory = styled.li`
   border-bottom: 1px solid var(--cultured);
 `
 
+export const TopActionsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`
+
+export const ActionSelect = styled.select`
+  border: none;
+  display: block;
+  /* min-width: 80px; */
+  padding: 5px 0;
+  font: inherit;
+  color: var(--sonic-silver);
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition-timing);
+`
+
 // social icons //

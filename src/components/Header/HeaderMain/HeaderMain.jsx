@@ -6,7 +6,7 @@ import {
   MdOutlineShoppingCart,
   } from 'react-icons/md'
 
-import { HeaderMainWrapper, BrandLink, MainContainer, SearchBar, SearchInput, SearchBtn, UserActionsWrap, ActionBtn, Count } from './headerMainStyles'
+import { HeaderMainWrapper, BrandLink, MainContainer, SearchBar, SearchInput, SearchBtn, UserActionsWrap, ActionBtn, Count, TopActionsContainer, ActionSelect } from './headerMainStyles'
 
 const HeaderMain = () => {
   return (

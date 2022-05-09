@@ -36,11 +36,6 @@ const HeaderTop = () => {
 
           <TopActionsContainer>
             <ActionSelect>
-              <option value="usd">USD</option>
-              <option value="cad">CAD</option>
-              <option value="eur">EUR</option>
-            </ActionSelect>
-            <ActionSelect>
               <option value="en-US">en</option>
               <option value="es-ES">es</option>
               <option value="fr">fr</option>

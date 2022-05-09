@@ -8,7 +8,7 @@ import Header from '../Header/Header'
 const Layout = ({children}) => {
   return (
     <>
-        {/* <Banner /> */}
+        <Banner />
         <Header />
         {/* <NavbarOld /> */}
         {children}

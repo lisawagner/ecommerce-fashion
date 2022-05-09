@@ -8,7 +8,9 @@ import {
   SlideNavTitle,
   CloseNavBtn,
   MobileMenu,
-  MenuCategory
+  MenuCategory,
+  TopActionsContainer,
+  ActionSelect
 } from './slideNavStyles'
 
 const SlideNav = ({click, handleClick}) => {
@@ -33,6 +35,14 @@ const SlideNav = ({click, handleClick}) => {
         })}
         </MobileMenu>
       
+        <TopActionsContainer>
+            <ActionSelect>
+              <option value="en-US">en</option>
+              <option value="es-ES">es</option>
+              <option value="fr">fr</option>
+            </ActionSelect>
+          </TopActionsContainer>
+
       </MobileNavigationMenu>
     </>
   )
