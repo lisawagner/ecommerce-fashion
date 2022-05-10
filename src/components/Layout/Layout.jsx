@@ -4,6 +4,7 @@ import Banner from '../Banner/Banner'
 import NavbarOld from '../NavbarOld'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
+import Footer2 from '../Footer2/Footer2'
 
 const Layout = ({children}) => {
   return (
@@ -13,6 +14,7 @@ const Layout = ({children}) => {
         {/* <NavbarOld /> */}
         {children}
         <Footer />
+        <Footer2 />
     </>
   )
 }

@@ -21,6 +21,7 @@ export const DesktopMenuList = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-bottom: 1rem;
 `
 
 // |||||switch to react-router-dom Links

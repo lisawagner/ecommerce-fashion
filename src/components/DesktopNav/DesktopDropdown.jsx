@@ -6,7 +6,9 @@ const DropdownListUL = styled.ul.attrs(
 )`
   position: absolute;
   width: 200px;
+  /* width: 100%; */
   background: var(--white);
+  /* background-color: rgba(255, 255, 255, 0.719); */
   padding: 20px 0;
   border-radius: var(--border-radius-md);
   border: 1px solid var(--cultured);
@@ -16,6 +18,7 @@ const DropdownListUL = styled.ul.attrs(
   transform: translateY(60px);
   visibility: hidden;
   opacity: 0;
+  z-index: 999;
 
   &.show {
     /* display: block; */
