@@ -18,7 +18,7 @@ const Footer2 = () => {
           <FooterBrand>PHENOMENA</FooterBrand>
           <FooterParagraph>Embrace the power of serendipity.</FooterParagraph>
           <FooterParagraph>Wear exactly what you want. As long as you are true to yourself, you will look wonderful.</FooterParagraph>
-          <FooterParagraph>The real joy in fashion comes from wearing what you want. When you look in a mirror, you see you, not someone else.</FooterParagraph>
+          {/* <FooterParagraph>The real joy in fashion comes from wearing what you want. When you look in a mirror, you see you, not someone else.</FooterParagraph> */}
           <FooterParagraph>Be your favourite version of yourself</FooterParagraph>
           {/* <h3>Social Links</h3> */}
           <SocialIcons />
