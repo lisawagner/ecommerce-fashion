@@ -1,15 +1,18 @@
 export const SOCIALLINKS = [
   {
     name: "facebook",
-    // submenu: [{}]
+    url: '/'
   },
   {
     name: "twitter",
+    url: '/'
   },
   {
     name: "instagram",
+    url: '/'
   },
   {
     name: "tiktok",
+    url: '/'
   },
 ]

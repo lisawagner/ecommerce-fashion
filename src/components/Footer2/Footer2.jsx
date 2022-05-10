@@ -1,48 +1,66 @@
 import React from 'react'
+import SocialIcons from '../SocialIcons/SocialIcons'
+import { NAVLINKS } from '../../models/navlinks'
+import { INFOLINKS } from '../../models/infolinks'
 
-import { FooterWrap, FooterCol, ColumnTitle, FooterLink} from './footerStyles'
+import { MdLocationPin, MdLocalPhone, MdOutlineEmail } from 'react-icons/md'
+
+import { FooterWrap, FooterGrid, FooterCell, FooterBrand, ColumnTitle, FooterParagraph, FooterLink, ContactItem } from './footerStyles'
+import LanguageWidget from '../LanguageWidget/LanguageWidget'
+
 
 const Footer2 = () => {
   return (
     <FooterWrap>
 
-      <FooterCol>
-        <ColumnTitle>PHENOMENA</ColumnTitle>
-        <p>Embrace the power of serendipity. Wear exactly what you want. As long as you are true to yourself, you will look wonderful.</p>
-        <p>The real joy in fashion comes from wearing exactly what you want so that, when you look in the mirror, you see you, not someone else.</p>
-        <p>Be your favourite version of yourself</p>
-        <h3>Social Links</h3>
-      </FooterCol>
+      <FooterGrid>
+        <FooterCell>
+          <FooterBrand>PHENOMENA</FooterBrand>
+          <FooterParagraph>Embrace the power of serendipity.</FooterParagraph>
+          <FooterParagraph>Wear exactly what you want. As long as you are true to yourself, you will look wonderful.</FooterParagraph>
+          <FooterParagraph>The real joy in fashion comes from wearing what you want. When you look in a mirror, you see you, not someone else.</FooterParagraph>
+          <FooterParagraph>Be your favourite version of yourself</FooterParagraph>
+          {/* <h3>Social Links</h3> */}
+          <SocialIcons />
+        </FooterCell>
 
-      <FooterCol>
-        <ColumnTitle>Shop</ColumnTitle>
-        <FooterLink>Collections</FooterLink>
-        <FooterLink>Clothing</FooterLink>
-        <FooterLink>Accessories</FooterLink>
-        <FooterLink>Essence of Phenomena</FooterLink>
+        <FooterCell>
+          <ColumnTitle>Shop</ColumnTitle>
+            {NAVLINKS.map( (item, index) => {
+              return (
+              <FooterLink to={item.url} items={item} key={index}>
+                {item.name}
+                </FooterLink>
+              )
+            })}
+        </FooterCell>
 
-      </FooterCol>
+        <FooterCell>
+          <ColumnTitle>Info</ColumnTitle>
+            {INFOLINKS.map( (item, index) => {
+              return (
+              <FooterLink to={item.url} items={item} key={index}>
+                {item.name}
+                </FooterLink>
+              )
+            })}
+        </FooterCell>
 
-      <FooterCol>
-        <ColumnTitle>Info</ColumnTitle>
-        <FooterLink>My Account</FooterLink>
-        <FooterLink>Cutomer Service</FooterLink>
-        <FooterLink>Order Tracking</FooterLink>
-        <FooterLink>Store Locator</FooterLink>
-        <FooterLink>Gift Cards</FooterLink>
-        <FooterLink>Terms</FooterLink>
-      </FooterCol>
+        <FooterCell>
+          <ColumnTitle>Contact</ColumnTitle>
+            <ContactItem>
+              <MdLocationPin style={{marginRight:"10px", fontSize:"1.5rem"}} />1980 Vulcan Path, Southern Alberta 98336
+            </ContactItem>
+            <ContactItem>
+              <MdLocalPhone style={{marginRight:"10px", fontSize:"1.5rem"}} /> +1 234 567 8000
+            </ContactItem>
+            <ContactItem>
+              <MdOutlineEmail style={{marginRight:"10px", fontSize:"1.5rem"}} />support@yesyes.com
+            </ContactItem>
+            <LanguageWidget />
+        </FooterCell>
 
-      <FooterCol>
-        <ColumnTitle>Contact</ColumnTitle>
-        <FooterLink>Address</FooterLink>
-        <FooterLink>Phone Number</FooterLink>
-        <FooterLink>Email</FooterLink>
-        <FooterLink>image of credit cards</FooterLink>
-        <FooterLink>Language settings</FooterLink>
-
-      </FooterCol>
-
+        </FooterGrid>
       </FooterWrap>
   )
 }
