@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { DEVICE } from '../../constants/Breakpoints';
 
 export const Container = styled.div`
-display: flex;
 
+    
 `
 
 export const Arrow = styled.div`
@@ -26,17 +26,23 @@ export const Arrow = styled.div`
     z-index: 2;
 `
 export const Wrapper = styled.div`
+overflow: hidden;
+    position: relative;
+
     transition: all 1.5s ease;
     transform: translateX(${(props) => props.slideIndex * -100}vw);
+    
 `
 
 export const Slide = styled.div`
-
+    
     background-color: ${ props => props.bg };
+
 
 `
 
 export const SlideWrapper = styled.div`
+
     grid-template-columns: none;
     grid-column-end: span 3;
     grid-row-end: span 6;
