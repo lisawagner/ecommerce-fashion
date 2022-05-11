@@ -1,12 +1,20 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
+import styled from 'styled-components'
+import { sliderItems } from "../../constants/data";
 import SliderContent from "./SliderContent";
 import Arrows from "./Arrows";
-import sliderImage from "./sliderImage";
-import "./slider.css";
 
-const len = sliderImage.length - 1;
+const CarouselWrap = styled.div`
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+`
 
-function Slider(props) {
+const len = sliderItems.length - 1;
+
+const HeroSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -17,8 +25,8 @@ function Slider(props) {
   }, [activeIndex]);
 
   return (
-    <div className="slider-container">
-      <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
+    <CarouselWrap>
+      <SliderContent activeIndex={activeIndex} sliderItems={sliderItems} />
       <Arrows
         prevSlide={() =>
           setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
@@ -27,8 +35,9 @@ function Slider(props) {
           setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
         }
       />
-    </div>
-  );
+      </CarouselWrap>
+    
+  )
 }
 
-export default Slider;
+export default HeroSlider

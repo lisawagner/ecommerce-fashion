@@ -45,7 +45,7 @@ padding-top: 16px;
     }
 `
 
-const Image = styled.image`
+const Image = styled.img`
   /* width: 100%;
   height: 100%;
   position: absolute;
@@ -53,21 +53,32 @@ const Image = styled.image`
   z-index: 999; */
 
   display: block;
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `
 
 const Title = styled.h1``
 
-const Desc = styled.p``
+const Desc = styled.p`
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+`
 
-const Button = styled.button``
+const Button = styled.button`
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  /* border-radius: 2px; */
+  cursor: pointer;
+  `
 
 const CardContent = ({ activeIndex, sliderItems }) => {
   return (
