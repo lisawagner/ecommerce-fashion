@@ -1,6 +1,8 @@
 # eCommerce App
 
-Currently working on the site navigation.
+This is a work in progress. The front end for the header and footer is set up and ready for the next steps. Hero slider, product lists, additional pages all need refactoring.
+
+As of May 12, 2022, have to pause this project and plan to return to it when my schedule is not so busy.
 
 ## Development Phases
 
