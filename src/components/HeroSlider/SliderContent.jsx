@@ -40,19 +40,25 @@ const SlideWrapper = styled.div`
 const ImgWrapper = styled.div`
   width: 100%;
   position: relative;
-  height: 0;
-  padding-top: 100%;`
+  /* height: 0; */
+  /* padding-top: 100%; */
+  `
   
 const SlideImage = styled.img`
     display: block;
     max-width: 100%;
-    /* height: auto; */
+    height: auto;
 
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     object-fit: cover;
+
+    @media ${DEVICE.laptop} {
+
+    }
+
 `
 
 const InfoWrapper = styled.div`
