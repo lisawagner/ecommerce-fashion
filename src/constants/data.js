@@ -1,7 +1,13 @@
+import First from "../assets/img/saint-ape1.jpg";
+import Second from "../assets/img/outstanding1.jpg";
+import Third from "../assets/img/earmuffs1.jpg";
+
+
 export const sliderItems = [
     {
       id: 1,
-      img: "https://images.unsplash.com/photo-1525430182374-bf7e61d4f220?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1440&q=80",
+      img: First,
+      // img: "https://images.unsplash.com/photo-1525430182374-bf7e61d4f220?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1440&q=80",
       title: "The spring collection",
       desc: "New styles have arrived!",
       bg: "#ff7f50",
@@ -9,15 +15,17 @@ export const sliderItems = [
     },
     {
       id: 2,
-      img: "https://images.unsplash.com/photo-1596993098914-4a3aa84704a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
-      title: "Explore your favourite version of yourself",
+      img: Second,
+      // img: "https://images.unsplash.com/photo-1596993098914-4a3aa84704a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+      title: "Explore your favourite self",
       desc: "Wear clothes because you love them.",
       bg: "#8F42FF",
       btn: "Shop now",
     },
     {
       id: 3,
-      img: "https://images.unsplash.com/photo-1504733895167-3ae3cb9e27b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+      img: Third,
+      // img: "https://images.unsplash.com/photo-1504733895167-3ae3cb9e27b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
       title: "Be curious, have fun.",
       desc: "Style is about self-expression and attitude.",
       bg: "#FFFA69",

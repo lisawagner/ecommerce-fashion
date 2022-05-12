@@ -6,7 +6,7 @@ import Arrows from "./Arrows";
 
 const CarouselWrap = styled.div`
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
   margin: auto;
   overflow: hidden;

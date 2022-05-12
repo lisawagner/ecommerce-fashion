@@ -13,8 +13,11 @@ const Container = styled.div`
     height: 100vh;
     display: flex;
     /* background-color: coral; */
+
+    /* --- */
     position: relative;
     overflow: hidden;
+    /* --- */
     
 `
 const Arrow = styled.div`
