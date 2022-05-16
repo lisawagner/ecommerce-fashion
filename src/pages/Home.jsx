@@ -4,6 +4,7 @@ import Magazine from '../components/Magazine'
 import Products from '../components/Products'
 import Hero from '../components/Hero/Hero'
 import FeatureCards from '../components/FeatureCards/FeatureCards'
+import Cards from '../components/Cards/Cards'
 
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
     <>
       <Hero />
       {/* <FeaturedDepts /> */}
-      <FeatureCards />
+      {/* <FeatureCards /> */}
+      <Cards />
       <Products />
       <Magazine />
     </>
