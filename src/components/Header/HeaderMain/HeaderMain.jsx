@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import {
   MdSearch,
   MdPersonOutline,
@@ -25,15 +25,21 @@ const HeaderMain = () => {
 
           <UserActionsWrap>
             <ActionBtn>
-              <MdPersonOutline />
+              <Link to="/home" >
+                <MdPersonOutline />
+              </Link>
             </ActionBtn>
             <ActionBtn>
-              <MdOutlineFavoriteBorder />
-              <Count>0</Count>
+              <Link to="/home" >
+                <MdOutlineFavoriteBorder />
+                <Count>0</Count>
+              </Link>
             </ActionBtn>
             <ActionBtn>
-              <MdOutlineShoppingCart />
-              <Count>0</Count>
+              <Link to="/cart" >
+                <MdOutlineShoppingCart />
+                <Count>0</Count>
+              </Link>
             </ActionBtn>
           </UserActionsWrap>
 

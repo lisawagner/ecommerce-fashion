@@ -1,27 +1,27 @@
 export const INFOLINKS = [
   {
     name: "My Account",
-    url: '/'
+    url: '/home'
     // submenu: [{}]
   },
   {
     name: "Customer Service",
-    url: '/'
+    url: '/home'
   },
   {
     name: "Order Tracking",
-    url: '/'
+    url: '/home'
   },
   {
     name: "Store Locator",
-    url: '/'
+    url: '/home'
   },
   {
     name: "Gift Cards",
-    url: '/'
+    url: '/home'
   },
   {
     name: "Terms",
-    url: '/'
+    url: '/home'
   },
 ]

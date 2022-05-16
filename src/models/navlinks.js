@@ -8,7 +8,7 @@ export const NAVLINKS = [
   {
     id: "01",
     name: "Home",
-    url: "/",
+    url: "/home",
     iconClose: <MdRemove />,
     iconOpen: <MdAdd />
     // submenu: [{}]

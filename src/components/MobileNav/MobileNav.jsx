@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import SlideNav from './SlideNav'
 
 import {
@@ -18,19 +19,27 @@ const MobileNav = () => {
     <>
       <MobileNavWrap clicked={click}>
 
-        <ActionBtn onClick={handleClick}  >
+        <ActionBtn onClick={handleClick}>
           <MdOutlineMenu name="menu-outline" />
         </ActionBtn>
 
         <UserActions>
-          <ActionBtn><MdOutlineHome name="home-outline" /></ActionBtn>
           <ActionBtn>
-            <MdOutlineFavoriteBorder name="heart-outline" />
-            <CountStyle>0</CountStyle>
+            <Link to="/home">
+              <MdOutlineHome name="home-outline" />
+            </Link>
           </ActionBtn>
           <ActionBtn>
-            <MdOutlineShoppingCart name="bag-handle-outline" />
-            <CountStyle>0</CountStyle>
+            <Link to="/home">
+              <MdOutlineFavoriteBorder name="heart-outline" />
+              <CountStyle>0</CountStyle>
+            </Link>
+          </ActionBtn>
+          <ActionBtn>
+            <Link to="/cart">
+              <MdOutlineShoppingCart name="bag-handle-outline" />
+              <CountStyle>0</CountStyle>
+            </Link>
           </ActionBtn>
         </UserActions>
 

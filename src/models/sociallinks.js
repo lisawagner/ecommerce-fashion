@@ -1,18 +1,18 @@
 export const SOCIALLINKS = [
   {
     name: "facebook",
-    url: '/'
+    url: '/home'
   },
   {
     name: "twitter",
-    url: '/'
+    url: '/home'
   },
   {
     name: "instagram",
-    url: '/'
+    url: '/home'
   },
   {
     name: "tiktok",
-    url: '/'
+    url: '/home'
   },
 ]
