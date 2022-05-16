@@ -38,20 +38,20 @@ export const departments = [
       id: 1,
       // img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       img: "https://images.unsplash.com/photo-1583846762363-5fc36ec494a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      title: "day styles",
+      title: "accessories",
       bg: "#ff7f50",
     },
     {
       id: 2,
       // img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       img: "https://images.unsplash.com/photo-1589194375169-d5e34dfea4dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1456&q=80",
-      title: "active wear",
+      title: "essentials",
       bg: "#8F42FF",
     },
     {
       id: 3,
       img: "https://images.unsplash.com/photo-1570915226741-cc7d678ad7ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1456&q=80",
-      title: "essentials",
+      title: "cafe couture",
       bg: "#008080",
     },
   ];
