@@ -4,19 +4,12 @@ import { DEVICE } from '../../constants/Breakpoints';
 
 const CardWrap = styled.div`
   overflow: hidden;
-  box-shadow: 0px 2px 20px #e1e5ee;
-  background: white;
   border-radius: 0.2rem;
   position: relative;
   width: 350px;
   transition: 250ms all ease-in-out;
   cursor: pointer;
   background-color: ${ props => props.bg };
-
-  /* &:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 2px 25px #e1e5ee;
-  } */
 
   @media ${DEVICE.laptopM} {
     width: 400px;
