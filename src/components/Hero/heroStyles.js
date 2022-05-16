@@ -3,51 +3,17 @@ import styled from 'styled-components'
 import { DEVICE } from '../../constants/Breakpoints';
 
 export const Container = styled.div`
-    /* width: 100%; */
-    /* height: 100vh; */
-    background: black;
+    background: yellow;
 `
 
-export const Arrow = styled.div`
-    width: 50px;
-    height: 50px;
-    background-color: #fff7f7;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: ${props => props.direction === 'left' && '10px'};
-    right: ${props => props.direction === 'right' && '10px'};
-    margin: auto;
-    cursor: pointer;
-    opacity: 0.5;
-    z-index: 2;
-`
-export const Wrapper = styled.div`
-
-    /* overflow: hidden;
-    position: relative; */
-    
-
-    transition: all 1.5s ease;
-    transform: translateX(${(props) => props.slideIndex * -100}vw);
-    
+export const Wrapper = styled.div` 
 `
 
-export const Slide = styled.div`
-
-    
+export const Slide = styled.div` 
     background-color: ${ props => props.bg };
-
-
 `
 
 export const SlideWrapper = styled.div`
-
-
     grid-template-columns: none;
     grid-column-end: span 3;
     grid-row-end: span 6;
@@ -62,16 +28,12 @@ export const SlideWrapper = styled.div`
 `
 
 export const ImgContainer = styled.div`
-
-    /* height: 100%;
-    flex: 1; */
     position: relative;
     width: 100%;
     height: 0;
     padding-top: 100%;
 `
 export const Image = styled.img`
-    /* height: 100%; */
     display: block;
     max-width: 100%;
     height: auto;
@@ -84,27 +46,43 @@ export const Image = styled.img`
     
 `
 export const InfoContainer = styled.div`
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-bottom: 71px;
-    
+    /* padding-top: 16px; */
+    /* padding-left: 16px; */
+    /* padding-bottom: 71px; */
 
+    padding: 16px 16px 71px;
+    
     @media ${DEVICE.tablet} {
-        padding-top: 24px;
-        padding-left: 56px;
-        padding-bottom: 56px;
+        /* padding-top: 24px; */
+        /* padding-left: 46px; */
+        /* padding-bottom: 56px; */
+        padding: 24px 20px 56px;
     }
 
     @media ${DEVICE.laptop} {
-        padding-left: 66px;
+        /* padding-left: 56px; */
+        padding: 24px 40px 56px;
+    }
+
+    @media ${DEVICE.laptopL} {
+        padding-left: 66px
     }
 
 `
 export const Title = styled.h1`
-    /* font-size: 70px; */
+    margin-top: 1rem;
+    font-size: 3rem;
+
+    @media ${DEVICE.laptop} {
+        font-size: 3.5rem;
+    }
+
+    @media ${DEVICE.laptopL} {
+        font-size: 5rem;
+    }
 `
 export const Desc = styled.p`
-    /* margin: 50px 0; */
+    margin: 2rem 0;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 3px;
