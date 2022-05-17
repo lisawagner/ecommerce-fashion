@@ -11,9 +11,10 @@ export const Title = styled.h1`
 export const Top = styled.div`
   display: flex;
   align-items: center;
+  flex-direction: column;
   /* justify-content: space-between; */
   /* padding: 20px; */
-  flex-direction: column;
+  
 `;
 
 export const TopButton = styled.button`
@@ -21,6 +22,7 @@ export const TopButton = styled.button`
   font-weight: 600;
   cursor: pointer;
   border: ${(props) => props.type === "filled" && "none"};
+  border-radius: 4px;
   background-color: ${(props) =>
     props.type === "filled" ? "black" : "transparent"};
   color: ${(props) => props.type === "filled" && "white"};
@@ -28,6 +30,12 @@ export const TopButton = styled.button`
 `;
 
 export const TopTexts = styled.div`
+display: none;
+
+@media ${DEVICE.mobileS} {
+  display: block;
+}
+
 `;
 export const TopText = styled.span`
   text-decoration: underline;
@@ -41,20 +49,42 @@ export const Bottom = styled.div`
   justify-content: center;
   align-items: center;
   /* justify-content: space-between; */
+
+  @media ${DEVICE.laptopM} {
+    flex-direction: row;
+    
+}
 `;
 export const Info = styled.div`
   /* flex: 3; */
   width: 90%;
   margin: auto;
   line-height: 1.75rem;
-  /* background: pink; */
+
+  @media ${DEVICE.laptopM} {
+    flex: 3;
+  }
+
 `;
 export const Product = styled.div`
   display: flex;
   flex-direction: column;
   /* background: orange; */
-
   /* justify-content: space-between; */
+
+  @media ${DEVICE.tablet} {
+    margin: 1rem 4rem;
+  }
+
+  @media ${DEVICE.laptop} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media ${DEVICE.laptopM} {
+    margin: 1rem 4rem 1rem 1rem;
+  }
+  
 `;
 export const ProductDetail = styled.div`
   /* flex: 2;
@@ -63,6 +93,18 @@ export const ProductDetail = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media ${DEVICE.tablet} {
+    /* flex: 2; */
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  @media ${DEVICE.laptop} {
+    gap: 2rem;
+  }
+
+  
 `;
 export const Image = styled.img`
   width: 200px;
@@ -98,6 +140,12 @@ export const PriceDetail = styled.div`
   justify-content: space-around;
   margin-bottom: 1.5rem;
   /* justify-content: center; */
+
+  @media ${DEVICE.laptop} {
+    /* background-color: pink; */
+    gap: 6rem;
+  }
+
 `;
 
 export const ProductAmountContainer = styled.div`
@@ -125,9 +173,17 @@ export const Summary = styled.div`
   border-radius: 10px;
   padding: 20px;
   height: 50vh;
+  /* background: teal; */
+  width: 100%;
+
+  @media ${DEVICE.tablet} {
+    width: 90%;
+  }
+  
 `;
 export const SummaryTitle = styled.h1`
-  font-weight: 200;
+  font-weight: 700;
+  
 `;
 export const SummaryItem = styled.div`
   margin: 30px 0px;
@@ -136,7 +192,9 @@ export const SummaryItem = styled.div`
   font-weight: ${(props) => props.type === "total" && "500"};
   font-size: ${(props) => props.type === "total" && "24px"};
 `;
-export const SummaryItemText = styled.span``;
+export const SummaryItemText = styled.span`
+
+`;
 export const SummaryItemPrice = styled.span``;
 export const Button = styled.button`
   width: 100%;
@@ -144,4 +202,5 @@ export const Button = styled.button`
   background-color: black;
   color: white;
   font-weight: 600;
+  border-radius: 4px;
 `;
