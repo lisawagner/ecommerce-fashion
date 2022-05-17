@@ -21,7 +21,8 @@ export const TopButton = styled.button`
   padding: 10px;
   font-weight: 600;
   cursor: pointer;
-  border: ${(props) => props.type === "filled" && "none"};
+  border: 0.5px solid black;
+  /* border: ${(props) => props.type === "filled" && "none"}; */
   border-radius: 4px;
   background-color: ${(props) =>
     props.type === "filled" ? "black" : "transparent"};
