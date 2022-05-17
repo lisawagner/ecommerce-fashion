@@ -25,12 +25,12 @@ const MobileNav = () => {
 
         <UserActions>
           <ActionBtn>
-            <Link to="/home">
+            <Link to="/">
               <MdOutlineHome name="home-outline" />
             </Link>
           </ActionBtn>
           <ActionBtn>
-            <Link to="/home">
+            <Link to="/">
               <MdOutlineFavoriteBorder name="heart-outline" />
               <CountStyle>0</CountStyle>
             </Link>

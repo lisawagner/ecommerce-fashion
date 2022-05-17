@@ -1,7 +1,7 @@
 export const INFOLINKS = [
   {
     name: "My Account",
-    url: '/home'
+    url: '/'
     // submenu: [{}]
   },
   {
@@ -10,18 +10,18 @@ export const INFOLINKS = [
   },
   {
     name: "Order Tracking",
-    url: '/home'
+    url: '/'
   },
   {
     name: "Store Locator",
-    url: '/home'
+    url: '/'
   },
   {
     name: "Gift Cards",
-    url: '/home'
+    url: '/'
   },
   {
     name: "Terms",
-    url: '/home'
+    url: '/'
   },
 ]

@@ -25,12 +25,12 @@ const HeaderMain = () => {
 
           <UserActionsWrap>
             <ActionBtn>
-              <Link to="/home" >
+              <Link to="/" >
                 <MdPersonOutline />
               </Link>
             </ActionBtn>
             <ActionBtn>
-              <Link to="/home" >
+              <Link to="/" >
                 <MdOutlineFavoriteBorder />
                 <Count>0</Count>
               </Link>
