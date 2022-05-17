@@ -14,6 +14,8 @@ import {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: coral;
+    background-color: rgba(255, 127, 80, 0.1); */
     z-index: 3;
     display: flex;
     align-items: center;
@@ -51,7 +53,8 @@ import {
     margin: 10px;
     transition: all 0.5s ease;
     &:hover {
-      background-color: #e9f5f5;
+      color: white;
+      background: var(--teal);
       transform: scale(1.1);
     }
   `;
