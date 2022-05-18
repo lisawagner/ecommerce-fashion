@@ -13,29 +13,34 @@ import {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    /* background-color: coral;
-    background-color: rgba(255, 127, 80, 0.1); */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    /* background-color: coral; */
+    /* background-color: rgba(255, 127, 80, 0.1); */
     z-index: 3;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     transition: all 0.5s ease;
     cursor: pointer;
   `;
   const Container = styled.div`
     flex: 1;
-    margin: 5px;
+    margin: 2px;
     min-width: 280px;
     height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5fbfd;
+    /* background-color: #f5fbfd; */
+    /* border: 5px solid var(--blue-violet); */
+    background: white;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s; */
     position: relative;
   
     &:hover ${Info}{
       opacity: 1;
+      /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); */
     }
   `;
   const Image = styled.img`
@@ -50,7 +55,7 @@ import {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 1.1rem 1rem;
     transition: all 0.5s ease;
     &:hover {
       color: white;
